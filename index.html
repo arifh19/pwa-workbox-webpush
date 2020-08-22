@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="Description" content="Progressive Web Application, Football">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" href="img/icon-192px.png">
+  <title>My Football</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="img/logo.png" sizes="256x256" type="image/png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+</head>
+
+<body>
+  <!-- Navigasi -->
+  <nav class="blue">
+    <div class="nav-wrapper container">
+      <a href="#!" class="brand-logo">My Football</a>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="topnav right hide-on-med-and-down"></ul>
+      <ul class="sidenav" id="nav-mobile"></ul>
+  </nav>
+  <!-- Akhir Navigasi -->
+  <!-- Isi Konten Dinamis -->
+  <div class="container" id="body-content">
+    <h5 class="header" id="header-title"></h5>
+    <div class="row">
+      <div class="center-align" id="loader"></div>
+      <div class="col s12 m12" id="main-content">
+      </div>
+    </div>
+  </div>
+  <!-- Akhir Isi Konten -->
+  <script src="js/materialize.min.js"></script>
+  <script src="js/idb.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/init.js"></script>
+</body>
+
+</html>
